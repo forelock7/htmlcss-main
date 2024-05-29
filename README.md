@@ -15,3 +15,11 @@ This repository is contains the code used in my course "Understanding HTML and C
 - Tag - a way to markup the document that is friendly to user agents
 - the markuo describe the document
 - by marking up a document you are attempting to add meaning
+
+- Tags, attributes and element
+- nested elements
+
+- markup language is everywhere (for instance in zip files)
+
+- specifications - a standard of precise requirements
+- HTML specofocation: https://html.spec.whatwg.org/multipage/
