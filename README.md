@@ -23,3 +23,7 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 - specifications - a standard of precise requirements
 - HTML specofocation: https://html.spec.whatwg.org/multipage/
+- Normative - establishing a standard
+
+- Authors of documents - developers of web applications
+- Implementors of tools - creators of browser
