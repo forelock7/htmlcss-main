@@ -27,3 +27,18 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 - Authors of documents - developers of web applications
 - Implementors of tools - creators of browser
+
+# Section 4: The  Document
+
+- '<!DOCTYPE html>' - said user agent that this document is standard of HTML
+- 'html' - element represents the root of an HTML document
+
+- Metadata - a set of data that provides information about other data
+    + Alicea - data -> lasttname - metadata
+    + Tony - data -> firstname - metadata
+
+- 'title' element represents the document's title and name
+- Author should use titles that identify their documents even when they are used out of contrext. No more than one title element per document
+
+- character set - set of supported characters (numbers, letters, symbols). UTF-8 covers almost everything in every language.
+- '<meta charset="UTF-8">' element isn't closed
