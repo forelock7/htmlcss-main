@@ -42,3 +42,15 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 - character set - set of supported characters (numbers, letters, symbols). UTF-8 covers almost everything in every language.
 - '<meta charset="UTF-8">' element isn't closed
+
+# Section 5: Document Sections
+
+- outline - <section></section>
+- self-containd composition - example element <article></articale>
+- Thematic grouping of content - <section></section>
+- Tangential Content - <aside></aside> - aside element represents a section of a page that consists of content
+    that is tangentially related to the content around the aside element
+- Heading and rankins - <h1></h1>, <h2></h2> ... <h6></h6> - represents implicatly a new section.
+    If following heading with lower ranking - subsection
+- Headers and footers - <header><header>, <footer></footer> 
+- Addresses - <address></address>
