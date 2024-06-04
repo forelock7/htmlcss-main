@@ -54,3 +54,15 @@ This repository is contains the code used in my course "Understanding HTML and C
     If following heading with lower ranking - subsection
 - Headers and footers - <header><header>, <footer></footer> 
 - Addresses - <address></address>
+
+# Section 6: Grouping Things
+
+- Paragraphs - <p></p>
+- Quats - <blockquote> - uses outside <p></p>
+- Unordered list <ul><li></li></ul>
+- Odered list <ol reversed><li></li></ol>, where 'reversed' attr represents reversed order
+- Association list - <dl><dt>Title</dt><dd>Value</dd></dl>
+- Multidimennsional Content (Table) <table><thead>....</thead>....</table>, <thead></thead>
+    Structure vs Semantic - not always DB data representation should be a html table
+- Dominant Content - <main></main>
+- <div></div> - has no special meaning at all. It represents its children. Do not replace all elements by 'div'!!!
