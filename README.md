@@ -97,3 +97,8 @@ This repository is contains the code used in my course "Understanding HTML and C
 Also could be created linked list to sections <li><a href="#aboutme">About Me</a></li>
 - Engine Aside: Gecko (Mozilla FireFox)
 - Engine Aside: WebKit (Safari)
+
+# Section 9: Accessibility
+- Accessibility - ability to be accessed and used independantly by people no matter their circumstances
+- Screen readers - user agent like a browser (not visual way, through speech, brail). It wors better with good semantic of html document
+- ARIA - specification of w3 organization
