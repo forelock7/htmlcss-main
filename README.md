@@ -77,3 +77,23 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   Line Breaks - <br /> or <br> - self closing element
 -   Author's comments - <!--Needs pectures--> - could be multilines
 -   <span></span> similar to div, but for text. Do not overuse it like div. Doesn't mean what it owns. Just represent childrens
+
+# Section 8: The Browser and the DOM
+
+-   Conceptual aside: HTTP - to deliver HTML from server to client (agent) and reverse. Hyper text - beyond text(more than text), hypermedia
+-   Anchor Tags and Hypertext - <a href="https://google.com" target="_blank">, <area>, - to link diferent resources. target - browser context (open a new browser context - new tab)
+-   Conceptual Aside: User Agents(again) - laptops, tablets - back and forth interaction between user - agent - server
+-   Conceptual Aside: the browser. Rendering engine - a computer that transforms an HTML document into visual, interactive representation
+-   Blink: A Rendering Engine of chromium
+-   Engine Aside: Parsing. - analtze text, charecter by character.
+-   Named Character References - '<h1>3<5</h1>' -> '<h1>3&lt;5</h1>' - to convert character into some coded to avoid unexpected behaviour
+- Conceptual Aside: Object - a collection of data(information) and code (that accomplish things) which together represents something
+- Conceptual Aside: Models - representation of a thing. Object model - a collection of objects that represents a thing and provide access to examine and change that thing.
+- The Document Object Model (DOM) - represents an HTML document, providing the ability to examine and change. This is what the browsers uses to create a visual representation of HTMLL document. DOM Tree
+- Building the DOM - User Agent takes HTML document from Server and builds DOM. Blink for example: parser read HTML and create an object (DOM).
+- Conceptual Aside: Developer Tools. 
+- The Inspector - one of the Dev Tools of browser. We actually see html converted from DOM, but not original html.
+- Anchor Tags (again). id - unigue attribute to identify some elements for example to create particular URL: if <section id="skills"> so URL to that section is: http://127.0.0.1:5500/C1_HTML_ADocument/Begin/index.html#skills
+Also could be created linked list to sections <li><a href="#aboutme">About Me</a></li>
+- Engine Aside: Gecko (Mozilla FireFox)
+- Engine Aside: WebKit (Safari)
