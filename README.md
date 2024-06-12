@@ -87,18 +87,48 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   Blink: A Rendering Engine of chromium
 -   Engine Aside: Parsing. - analtze text, charecter by character.
 -   Named Character References - '<h1>3<5</h1>' -> '<h1>3&lt;5</h1>' - to convert character into some coded to avoid unexpected behaviour
-- Conceptual Aside: Object - a collection of data(information) and code (that accomplish things) which together represents something
-- Conceptual Aside: Models - representation of a thing. Object model - a collection of objects that represents a thing and provide access to examine and change that thing.
-- The Document Object Model (DOM) - represents an HTML document, providing the ability to examine and change. This is what the browsers uses to create a visual representation of HTMLL document. DOM Tree
-- Building the DOM - User Agent takes HTML document from Server and builds DOM. Blink for example: parser read HTML and create an object (DOM).
-- Conceptual Aside: Developer Tools. 
-- The Inspector - one of the Dev Tools of browser. We actually see html converted from DOM, but not original html.
-- Anchor Tags (again). id - unigue attribute to identify some elements for example to create particular URL: if <section id="skills"> so URL to that section is: http://127.0.0.1:5500/C1_HTML_ADocument/Begin/index.html#skills
-Also could be created linked list to sections <li><a href="#aboutme">About Me</a></li>
-- Engine Aside: Gecko (Mozilla FireFox)
-- Engine Aside: WebKit (Safari)
+-   Conceptual Aside: Object - a collection of data(information) and code (that accomplish things) which together represents something
+-   Conceptual Aside: Models - representation of a thing. Object model - a collection of objects that represents a thing and provide access to examine and change that thing.
+-   The Document Object Model (DOM) - represents an HTML document, providing the ability to examine and change. This is what the browsers uses to create a visual representation of HTMLL document. DOM Tree
+-   Building the DOM - User Agent takes HTML document from Server and builds DOM. Blink for example: parser read HTML and create an object (DOM).
+-   Conceptual Aside: Developer Tools.
+-   The Inspector - one of the Dev Tools of browser. We actually see html converted from DOM, but not original html.
+-   Anchor Tags (again). id - unigue attribute to identify some elements for example to create particular URL: if <section id="skills"> so URL to that section is: http://127.0.0.1:5500/C1_HTML_ADocument/Begin/index.html#skills
+    Also could be created linked list to sections <li><a href="#aboutme">About Me</a></li>
+-   Engine Aside: Gecko (Mozilla FireFox)
+-   Engine Aside: WebKit (Safari)
 
 # Section 9: Accessibility
-- Accessibility - ability to be accessed and used independantly by people no matter their circumstances
-- Screen readers - user agent like a browser (not visual way, through speech, brail). It wors better with good semantic of html document
-- ARIA - specification of w3 organization
+
+-   Accessibility - ability to be accessed and used independantly by people no matter their circumstances
+-   Screen readers - user agent like a browser (not visual way, through speech, brail). It wors better with good semantic of html document
+-   ARIA - specification of w3 organization
+
+# Section 10: Interactivity
+
+-   Navigation - <nav></nav> - navigation block
+-   Engine Aside: Forms and HTTP. GET /search?q=html&page=3 - querystring after '?'. name/value pairs separated by '&'.
+    -   Forms build name/value pairs meant to be sent via HTTP.
+-   Forms, Fields and Labels.
+    -   <form action="dosomething.html"></form> - represents hyperlink, that can be manipulated (payload).
+    -   Attributes for form submission: action, enctype, method, novalidate, target.
+    -   There are elements which is associated with form - button, input
+    -   Field - html elements allow user to input informations: <input type="text">.
+    -   <input type="text" name="name" /> - by name user agent recognise it and suggest autofill
+    -   <label for="name"></label><input></input id="name"> - represents a a caption in a user interface. "for" - assosiate label with element where is id the same. Click on associated label is click on input.
+-   Buttons
+    -   elements to submitting the data
+    -   <input type="button" value="Send" /> as a button without any default behaviour (can't have child elements)
+    -   <input type="submit" value="Send" /> as a button with submit form
+    -   <button type="submit">Send</button>
+    -   <form action="dosomething.html"> - send GET http request with name/value querystring (URL params) URL={baseURL}/dosomething.html
+    -   <form action="dosomething.html" method="POST"> - send POST http request with name/value payload (Form Data in body)
+-   More Fields:
+    -   <input required /> - required attribute
+    -   <label> and <input> can be wrapped by <p></p>
+    -   select ->>> <select id="whycontacting" name="whycontacting"><option value="jobinterview">Job Interview</option>
+    -   textarea ->>> <label for="comments">Comments</label><textarea id="comments" name="comments" rows="3"></textarea>
+-   Even More Fields:
+    -   radiobutton - <p><label for="contacttime2">Afternoon</label><input type="radio" id="contacttime2" name="contacttime" value="afternoon" /></p> - 'name' attr is the same; 'id', 'value' - are different for each variant - name/value pair is 'contacttime=afternoon'
+    -   checkbox - <p><label for="asap">ASAP</label><input type="checkbox" id="asap" name="asap" /></p> - name/value pair is 'asap=on' if checked
+    -   <fieldset> - to group all radiobuttons and/or checkboxes (uses also <legend> as title for group)
