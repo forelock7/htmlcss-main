@@ -139,3 +139,11 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   React, Angular, Vue and HTML Authoring - tools to manupulate DOM. Still use semantic in templates, not overuse <div>
 
 # Section 12: Stylesheets and Querying Trees
+
+-   The CSS Specifications: https://www.w3.org/Style/CSS/
+    -   styleshieet - a collection of stylistic rules
+    -   CSS Snapshot - version of CSS specofication for a particular time (CSS Snapshot 2021)
+-   User Agent Stylsheet - collection of stylistic rules that the user agent follows when display an HTML document
+    -   Default CSS in browser -->>>https://chromium.googlesource.com/chromium/src.git/+/refs/heads/main/third_party/blink/renderer/core/html/resources/html.css
+    -   https://www.wiumlie.no/2006/phd/
+    -   p {font-weight: bold} - CSS Rule (Ruleset), where 'p' - selector; '{}' - declaration block, stylistic group; 'font-weight' - property; 'bold' - value; 'font-weight: bold' - declaration
