@@ -146,4 +146,6 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   User Agent Stylsheet - collection of stylistic rules that the user agent follows when display an HTML document
     -   Default CSS in browser -->>>https://chromium.googlesource.com/chromium/src.git/+/refs/heads/main/third_party/blink/renderer/core/html/resources/html.css
     -   https://www.wiumlie.no/2006/phd/
-    -   p {font-weight: bold} - CSS Rule (Ruleset), where 'p' - selector; '{}' - declaration block, stylistic group; 'font-weight' - property; 'bold' - value; 'font-weight: bold' - declaration
+    -   p {font-weight: bold;} - CSS Rule (Ruleset), where 'p' - selector; '{}' - declaration block, stylistic group; 'font-weight' - property; 'bold' - value; 'font-weight: bold' - declaration
+-   Selector - pattern that match (find) against elements in tree. 'p' - type selector
+-   Declarations - will apply to element found by selector
