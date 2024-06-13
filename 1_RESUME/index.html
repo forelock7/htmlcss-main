@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Resume of Tony Alicea</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#sevices">Sevices</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#workhistory">Work History</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#mailingaddress">Mailing Address</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Resume</h1>
+            <section>
+                <h2>Tony Alicea</h2>
+                <p>UX Designer, and Instructor</p>
+                <dl>
+                    <dt>Website</dt>
+                    <dd>
+                        <a href="https://google.com" target="_blank"
+                            >google.com</a
+                        >
+                    </dd>
+                    <dt>Phone</dt>
+                    <dd>555-555-1111</dd>
+                    <dt>Twitter</dt>
+                    <dd><a href="https://twitter.com">@anthonypalicea</a></dd>
+                    <dt>YouTube</dt>
+                    <dd>
+                        <a href="https://youtube.com/tonyalicea">TonyAlice</a>
+                    </dd>
+                </dl>
+            </section>
+
+            <article id="aboutme">
+                <header>
+                    <h2>About me</h2>
+                </header>
+                <p>
+                    Hi! I'm Tony Alicea and I'm <em>happy</em> to have you as a
+                    student in my courses.
+                </p>
+                <aside><small>Dont't imitate, understand!</small></aside>
+                <footer>Contact me</footer>
+            </article>
+
+            <section id="sevices">
+                <h2>Services</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>App Development</li>
+                    <li>Training</li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML Markup your content with semantic HTML.</li>
+                    <li>
+                        CSS Layout your content visually for multiple devices.
+                    </li>
+                    <li>
+                        JavaScript Make your content more interactive, and build
+                        web applications.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="workhistory">
+                <h2>Work History</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Role</th>
+                            <th>Company</th>
+                            <th>Years</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>UX/UI Designer</td>
+                            <td>XYZ Corp</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Web Developer</td>
+                            <td>ABC Corp</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Carpet Cleaner</td>
+                            <td>123 Inc.</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total</td>
+                            <td>10</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- <ol reversed>
+                <li>3 years</li>
+                <li>5 years</li>
+                <li>2 years</li>
+            </ol> -->
+            </section>
+            <!-- Needs pectures -->
+            <section id="portfolio">Portfolio</section>
+
+            <section id="testimonials">
+                <h2>Testimonials</h2>
+                <blockquote>
+                    <p>I love Tony's courses!</p>
+                </blockquote>
+                <blockquote>
+                    <p>Tony's courses <strong>helped me get a job.</strong></p>
+                </blockquote>
+            </section>
+
+            <section id="mailingaddress">
+                <h2>Mailing Address</h2>
+                <address>
+                    111 Main St.<br />
+                    Somewhere, NY 33333
+                </address>
+            </section>
+            <section id="contactme">
+                <h2>Contact me</h2>
+                <form action="dosomething.html" method="POST">
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </p>
+                    <p>
+                        <label for="whycontacting">Why Contacting</label>
+                        <select id="whycontacting" name="whycontacting">
+                            <option value="jobinterview">Job Interview</option>
+                            <option value="needcontractor">
+                                Need Contractor
+                            </option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="comments">Comments</label>
+                        <textarea
+                            id="comments"
+                            name="comments"
+                            rows="3"
+                        ></textarea>
+                    </p>
+                    <fieldset>
+                        <legend>Best Contact Time</legend>
+                        <p>
+                            <label for="contacttime1">Morning</label>
+                            <input
+                                type="radio"
+                                id="contacttime1"
+                                name="contacttime"
+                                value="morning"
+                            />
+                        </p>
+                        <p>
+                            <label for="contacttime2">Afternoon</label>
+                            <input
+                                type="radio"
+                                id="contacttime2"
+                                name="contacttime"
+                                value="afternoon"
+                            />
+                        </p>
+                        <p>
+                            <label for="contacttime3">Evening</label>
+                            <input
+                                type="radio"
+                                id="contacttime3"
+                                name="contacttime"
+                                value="evening"
+                            />
+                        </p>
+                        <p>
+                            <label for="asap">ASAP</label>
+                            <input type="checkbox" id="asap" name="asap" />
+                        </p>
+                    </fieldset>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
