@@ -149,3 +149,4 @@ This repository is contains the code used in my course "Understanding HTML and C
     -   p {font-weight: bold;} - CSS Rule (Ruleset), where 'p' - selector; '{}' - declaration block, stylistic group; 'font-weight' - property; 'bold' - value; 'font-weight: bold' - declaration
 -   Selector - pattern that match (find) against elements in tree. 'p' - type selector
 -   Declarations - will apply to element found by selector
+-   Inheritance - propagates proparties values to their children, values are computed
