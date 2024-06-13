@@ -137,3 +137,5 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 -   Conceptual Aside: DOM Manipulation - changing DOM tree after the HTML doc has been parsed and DOM has been created. Usually done manually via JS code. Browser gives JS possibility to manupulate DOM.
 -   React, Angular, Vue and HTML Authoring - tools to manupulate DOM. Still use semantic in templates, not overuse <div>
+
+# Section 12: Stylesheets and Querying Trees
