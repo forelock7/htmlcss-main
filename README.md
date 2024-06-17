@@ -151,3 +151,4 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   Declarations - will apply to element found by selector
 -   Inheritance - propagates proparties values to their children, values are computed
 -   Author Stylesheets: <link rel="stylesheet" href="styles.css" />
+-   Universal Selector: *{} - entire tree, all elements
