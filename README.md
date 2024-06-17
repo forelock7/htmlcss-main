@@ -160,3 +160,7 @@ This repository is contains the code used in my course "Understanding HTML and C
     #skills {
     font-weight: bold;
     }
+-   Class Selector: '.'
+    .pastoral {color=green} === class~=pastoral
+    h1.pastoral {color=green}
+    h1.some-class.second-class - h1 element which has both classes
