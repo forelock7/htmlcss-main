@@ -182,10 +182,15 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 -   Conceptual Aside: CSS Standards and Drafts. https://drafts.csswg.org/
     Each Specification has status:
-        + First Public Working Draft (FPWD)
-        + Working Draft (WD) 
-        + Candidate Recomendation (CR)
-        + Candidate Recomendation Draft (CRD)
-        + Proposed Recomendation (PR)
-        + Recomendation (REC)
-        + Superseded Recomendation (SPSD)
+
+    -   First Public Working Draft (FPWD)
+    -   Working Draft (WD)
+    -   Candidate Recomendation (CR)
+    -   Candidate Recomendation Draft (CRD)
+    -   Proposed Recomendation (PR)
+    -   Recomendation (REC)
+    -   Superseded Recomendation (SPSD)
+
+-   Browser Support (caniuse and MDN)
+    -   https://caniuse.com/
+    -   https://developer.mozilla.org
