@@ -177,3 +177,5 @@ This repository is contains the code used in my course "Understanding HTML and C
     div ol>li p {...}
 -   Combinators: Next-Sibling - immediatly sibling element
     ul + p {...}
+-   Combinators: Subsequent Sibling - all 'p' elements which are sibling to 'h2'
+    h2 ~ p {...}
