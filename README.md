@@ -175,5 +175,5 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   Combinators: Child - looks for DIRECT child, not only descendants
     body > p {...} - direct child
     div ol>li p {...}
--   Combinators: Next-Sibling - immediatly sibling element
+-   Combinators: Next-Sibling - imidiatly sibling element
     ul + p {...}
