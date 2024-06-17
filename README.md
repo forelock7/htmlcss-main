@@ -164,3 +164,9 @@ This repository is contains the code used in my course "Understanding HTML and C
     .pastoral {color=green} === class~=pastoral
     h1.pastoral {color=green}
     h1.some-class.second-class - h1 element which has both classes
+-   Grouping Selectors:
+    ul, ol {...}
+    ul[lang],
+    ol.resume-list {
+    font-weight: bold;
+    }

@@ -1,7 +1,4 @@
-.resume-list {
-    font-style: italic;
-}
-
-#skills {
+ul[lang],
+ol.resume-list {
     font-weight: bold;
 }
