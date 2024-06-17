@@ -1,4 +1,3 @@
-ul[lang],
-ol.resume-list {
+h2 + blockquote {
     font-weight: bold;
 }

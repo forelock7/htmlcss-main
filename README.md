@@ -173,5 +173,7 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   Combinators: Descendant. - separate by space ' '
     ul p {...} - looking 'p' which has 'ul' as a ancestor
 -   Combinators: Child - looks for DIRECT child, not only descendants
-    body > p - direct child
-    div ol>li p
+    body > p {...} - direct child
+    div ol>li p {...}
+-   Combinators: Next-Sibling - immediatly sibling element
+    ul + p {...}
