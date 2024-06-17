@@ -1,3 +1,7 @@
 [class~="resume-list"] {
     font-style: italic;
 }
+
+#skills {
+    font-weight: bold;
+}

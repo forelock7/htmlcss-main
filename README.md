@@ -153,6 +153,10 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   Author Stylesheets: <link rel="stylesheet" href="styles.css" />
 -   Universal Selector: \*{} - entire tree, all elements
 -   Attribute Selectors. For example
-        [class~="resume-list"] {
-            font-style: italic;
-        }
+    [class~="resume-list"] {
+    font-style: italic;
+    }
+-   ID Selector: # - h1#someid, #someid:
+    #skills {
+    font-weight: bold;
+    }
