@@ -179,3 +179,13 @@ This repository is contains the code used in my course "Understanding HTML and C
     ul + p {...}
 -   Combinators: Subsequent Sibling - all 'p' elements which are sibling to 'h2'
     h2 ~ p {...}
+
+-   Conceptual Aside: CSS Standards and Drafts. https://drafts.csswg.org/
+    Each Specification has status:
+        + First Public Working Draft (FPWD)
+        + Working Draft (WD) 
+        + Candidate Recomendation (CR)
+        + Candidate Recomendation Draft (CRD)
+        + Proposed Recomendation (PR)
+        + Recomendation (REC)
+        + Superseded Recomendation (SPSD)
