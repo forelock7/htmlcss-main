@@ -200,3 +200,4 @@ This repository is contains the code used in my course "Understanding HTML and C
     -   Pseudo - something is not real.
     -   Pseudo-class - selection based on information that lies outside the document tree
     -   li:nth-child(2n+1) {...} - get all <li> elements devide them into groups by 2 elements and select first. It's the same as li:nth-child(odd) {...}, or 2n+2 === even
+    -   there is a key difference between :nth-child and :nth-of-type. The :nth-child pseudo-class selects elements based on their position among all children of their parent, regardless of type, while :nth-of-type selects elements based on their position among siblings of the same type.
