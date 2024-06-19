@@ -204,7 +204,10 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 -   Typed Child-Indexed Pseudo-classes (and Debugging a Problem) - :nth-of-type
     there is a key difference between :nth-child and :nth-of-type. The :nth-child pseudo-class selects elements based on their position among all children of their parent, regardless of type, while :nth-of-type selects elements based on their position among siblings of the same type.
-    - :nth-child - all children
-    - :nth-of-type - only children with particular type(tag)
+
+    -   :nth-child - all children
+    -   :nth-of-type - only children with particular type(tag)
     <aside> can't be inside <p>, if you put it, browser can change DOM regarding rules - move <aside> from <p>
 
+-   User Action Pseudo-classes. Locations pseudo-classes:
+    -   a:visited { color: red;} - color visited link to red color
