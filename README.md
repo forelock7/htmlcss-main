@@ -210,4 +210,9 @@ This repository is contains the code used in my course "Understanding HTML and C
     <aside> can't be inside <p>, if you put it, browser can change DOM regarding rules - move <aside> from <p>
 
 -   User Action Pseudo-classes. Locations pseudo-classes:
+
     -   a:visited { color: red;} - color visited link to red color
+
+-   Input Pseudo-classes.
+    a:focus, a:hover { color: red;}
+    input:focus {outline: 2px solid black;} - color input border if click inside
