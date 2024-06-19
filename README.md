@@ -197,7 +197,14 @@ This repository is contains the code used in my course "Understanding HTML and C
     -   https://developer.mozilla.org
 
 -   Child-Indexed Pseudo-classes.
+
     -   Pseudo - something is not real.
     -   Pseudo-class - selection based on information that lies outside the document tree
     -   li:nth-child(2n+1) {...} - get all <li> elements devide them into groups by 2 elements and select first. It's the same as li:nth-child(odd) {...}, or 2n+2 === even
-    -   there is a key difference between :nth-child and :nth-of-type. The :nth-child pseudo-class selects elements based on their position among all children of their parent, regardless of type, while :nth-of-type selects elements based on their position among siblings of the same type.
+
+-   Typed Child-Indexed Pseudo-classes (and Debugging a Problem) - :nth-of-type
+    there is a key difference between :nth-child and :nth-of-type. The :nth-child pseudo-class selects elements based on their position among all children of their parent, regardless of type, while :nth-of-type selects elements based on their position among siblings of the same type.
+    - :nth-child - all children
+    - :nth-of-type - only children with particular type(tag)
+    <aside> can't be inside <p>, if you put it, browser can change DOM regarding rules - move <aside> from <p>
+
