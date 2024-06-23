@@ -6,3 +6,7 @@ a:hover {
 input:focus select:focus {
     outline: 2px solid black;
 }
+
+section:not(#testimonials) {
+    font-style: italic;
+}

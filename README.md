@@ -216,3 +216,11 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   Input Pseudo-classes.
     a:focus, a:hover { color: red;}
     input:focus {outline: 2px solid black;} - color input border if click inside
+
+-   Negation Pseudo-class:
+    section:not(#testimonials) {
+    font-style: italic;
+    }
+    p:not(.no-highlight) {
+    font-style: italic;
+    }
