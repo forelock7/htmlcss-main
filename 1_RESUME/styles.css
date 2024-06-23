@@ -14,3 +14,7 @@ section:not(#testimonials) {
 p::first-letter {
     font-weight: bold;
 }
+
+ul {
+    font-weight: bolder;
+}

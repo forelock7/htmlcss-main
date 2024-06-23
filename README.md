@@ -229,3 +229,44 @@ This repository is contains the code used in my course "Understanding HTML and C
     p::first-letter {
     font-weight: bold;
     }
+
+-   The Cascade - applying different styles to the same elements with an ordered list. So it's the process of combining several style sheets and resolving the conficts between them. Resolving is in desceeding order of declarations ("font-style: italic;")
+
+    1. Origin & Impornance
+    2. Specificity
+    3. Order of appearance
+
+-   Origin from highest priority to lowest:
+
+    1. Important user agent declaration (font-weight: bold !important;)
+    2. Important user declaration (when user/readers can change style) - could be ignore for now
+    3. Important author declaration
+    4. Normal author declaration
+    5. Normal user declaration - ignored for now
+    6. Normal user agent declaration
+
+-   Importance in CSS declarations (font-weight: bold !important;). Ussually it isn't used. Can be considered if:
+
+    -   you don't have much control over CSS (CSS is used by someone else)
+    -   something has gone very wrong
+
+-   Specificity
+
+    1. count the number of ID selectors in selectors
+    2. count the number of class selectors, attributes selectors and pseudo-classes in the selectors
+    3. count the number of type selectors and pseudo-elements in the selector
+    4. ignore the universal selector
+       #skills .resume-list (110) --- win
+       #skills (100)
+       sections.skills (011)
+       .skills (010)
+
+-   Order of Appearance. Last wins:
+    <head>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+    ul {
+    font-weight: bold !important;
+    }
+    </style>
+    <link rel="stylesheet" href="styles2.css" /> ---- WIN
