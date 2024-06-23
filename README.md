@@ -224,3 +224,8 @@ This repository is contains the code used in my course "Understanding HTML and C
     p:not(.no-highlight) {
     font-style: italic;
     }
+
+-   Pseudo-elements - represent abstract elementsbeyond those elements explicitly created by document language. Marked as "::"
+    p::first-letter {
+    font-weight: bold;
+    }

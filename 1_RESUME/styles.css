@@ -10,3 +10,7 @@ input:focus select:focus {
 section:not(#testimonials) {
     font-style: italic;
 }
+
+p::first-letter {
+    font-weight: bold;
+}
