@@ -314,6 +314,8 @@ This repository is contains the code used in my course "Understanding HTML and C
     nav a {text-decoration: underline;}
 
 -   Optimization:
-    ul * {} - user agent seeking element from right to left by selector (find '*' (all elements) and then find parent 'ul') - BAD
+    ul _ {} - user agent seeking element from right to left by selector (find '_' (all elements) and then find parent 'ul') - BAD
     selection p.name {}
     #skills {}
+
+-   Engine Aside: The CSSOM.
