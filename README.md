@@ -287,3 +287,14 @@ This repository is contains the code used in my course "Understanding HTML and C
         }
         in styles2.css:
         @import url(styles.css) layer(default);
+
+-   inherit, initial, and Specified Values
+    promarties has two related property. For instance 'font-wigth': Initial: normal; Inherited: yes (https://www.w3.org/TR/css-fonts-4/)
+    initial value is normal:
+    li {
+    font-weight: initial;
+    }
+    'li' will be bold from 'ul'
+    ul {font-weight: bold;}
+    li {font-weight: inherit;}
+    Specified value - value that is specified directly in declaration

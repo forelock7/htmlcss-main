@@ -1,20 +1,7 @@
-a:focus,
-a:hover {
-    color: red;
-}
-
-input:focus select:focus {
-    outline: 2px solid black;
-}
-
-section:not(#testimonials) {
-    font-style: italic;
-}
-
-p::first-letter {
+ul {
     font-weight: bold;
 }
 
-ul {
-    font-weight: bolder;
+li {
+    font-weight: inherit;
 }
