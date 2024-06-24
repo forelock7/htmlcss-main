@@ -270,3 +270,20 @@ This repository is contains the code used in my course "Understanding HTML and C
     }
     </style>
     <link rel="stylesheet" href="styles2.css" /> ---- WIN
+
+-   Cascade Layers and @import - allows to import styles rules
+
+    -   import
+        in index.html file:
+        <link rel="stylesheet" href="style.css" />
+        in style.css file (must be at the beggining of the css file!!!):
+        @import "styles.css";
+        @import "styles2.css";
+
+    -   layers
+        in styles.css:
+        @layer default {
+        p {max-width: 70ch;}
+        }
+        in styles2.css:
+        @import url(styles.css) layer(default);
