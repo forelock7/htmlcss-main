@@ -312,3 +312,8 @@ This repository is contains the code used in my course "Understanding HTML and C
     Fix:
     a:where(:not(:hover)) {text-decoration: none;}
     nav a {text-decoration: underline;}
+
+-   Optimization:
+    ul * {} - user agent seeking element from right to left by selector (find '*' (all elements) and then find parent 'ul') - BAD
+    selection p.name {}
+    #skills {}
