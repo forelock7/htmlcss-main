@@ -250,7 +250,7 @@ This repository is contains the code used in my course "Understanding HTML and C
     -   you don't have much control over CSS (CSS is used by someone else)
     -   something has gone very wrong
 
--   Specificity
+-   Specificity (you can see these numbers in IDE just hovering selector)
 
     1. count the number of ID selectors in selectors
     2. count the number of class selectors, attributes selectors and pseudo-classes in the selectors
@@ -304,3 +304,11 @@ This repository is contains the code used in my course "Understanding HTML and C
     ul.resume-list li, ol li {}
     after:
     :is(ul.resume-list, ol) li {}
+
+-   Specificity-Adjustment Pseudo-Class - ':where()'
+    Example to fix next:
+    a:not(:hover) {text-decoration: none;}
+    nav a {/_ Has no effect _/ text-decoration: underline;}
+    Fix:
+    a:where(:not(:hover)) {text-decoration: none;}
+    nav a {text-decoration: underline;}

@@ -1,3 +1,7 @@
-:is(ul.resume-list, ol) li {
-    outline: solid 1px red;
+a:where(:not(:hover)) {
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: underline;
 }
