@@ -298,3 +298,9 @@ This repository is contains the code used in my course "Understanding HTML and C
     ul {font-weight: bold;}
     li {font-weight: inherit;}
     Specified value - value that is specified directly in declaration
+
+-   Matches-Any Pseudo-Class: ':is()'
+    initial:
+    ul.resume-list li, ol li {}
+    after:
+    :is(ul.resume-list, ol) li {}

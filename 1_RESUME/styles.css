@@ -1,7 +1,3 @@
-ul {
-    font-weight: bold;
-}
-
-li {
-    font-weight: inherit;
+:is(ul.resume-list, ol) li {
+    outline: solid 1px red;
 }
