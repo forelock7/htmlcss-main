@@ -319,3 +319,15 @@ This repository is contains the code used in my course "Understanding HTML and C
     #skills {}
 
 -   Engine Aside: The CSSOM.
+
+# Section 13: Box Model
+
+-   Conceptual Aside: Rendering.
+    Inside user agent DOM tree and CSSOM are combined into render tree (Render Tree Construction)
+    After having Render Tree user agent do 2 steps of whole Rendering process:
+
+    -   decide whe the all content go (Layout)
+    -   displaying the content (Painting)
+
+-   Visual formatting model - the approach taken to render a document tree for visual media
+-   Media a means of communication
