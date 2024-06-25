@@ -331,3 +331,10 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 -   Visual formatting model - the approach taken to render a document tree for visual media
 -   Media a means of communication
+
+-   Box Model - visual formatting model of CSS. All elements draw boxes
+-   Viewport and Coordinates - part of content which is displayed
+-   Layout - calculation according to Box Model
+-   Device pixel - the smallest controllable element on a device screen.
+-   Pixel Density - the number of physical pixels on a device screen per unit of length (for example, inches)
+-   Reference pixels - used by CSS (ipx = 1/96 inch)
