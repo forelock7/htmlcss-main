@@ -338,3 +338,23 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   Device pixel - the smallest controllable element on a device screen.
 -   Pixel Density - the number of physical pixels on a device screen per unit of length (for example, inches)
 -   Reference pixels - used by CSS (ipx = 1/96 inch)
+
+-   Units and Computed Values: - Absolute: px, pt - Relative: 2em (increase value in 2 times)
+    body {font-size: 6px} - parent element
+    section {font-size: 2em} === 12px - taken from parent element('Styles' tab shows 'em' as user agent styles, but 'Computed' tab - 'px')
+    ul {font-size: 3rem} - taken from root element
+    vw - percentage of view ports
+
+    -   Declared Values
+        -   cascading
+    -   Cascaded Value
+        -   defaulting ( initial, inharitance)
+    -   Specified Value
+        -   resolving (relative values)
+    -   Computed Value
+        -   calculating
+    -   Used Value
+        -   final layout adjustments
+    -   Actual Value
+
+-   In 'Computed' tab we have actual values after all stages above
