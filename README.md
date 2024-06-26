@@ -358,3 +358,7 @@ This repository is contains the code used in my course "Understanding HTML and C
     -   Actual Value
 
 -   In 'Computed' tab we have actual values after all stages above
+
+-   Engine Aside: Intrinsic Size - the size (heigh and width) calculated based on content, not on size explicitly specified
+    -   min-content
+    -   max-content
