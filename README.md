@@ -360,5 +360,28 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   In 'Computed' tab we have actual values after all stages above
 
 -   Engine Aside: Intrinsic Size - the size (heigh and width) calculated based on content, not on size explicitly specified
+
     -   min-content
     -   max-content
+
+-   Box Sizing:
+
+    -   Content
+    -   Border (around the content)
+    -   Padding (box between content and border)
+    -   Marging (box between border and other boxes)
+
+    body {font-size: 16px}
+    padding-top: 0.5rem; - top=8px
+    padding-right: 0.5rem; - right=8px
+    ...
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem; - top=bottom=left=right=8px
+    padding: 0.5rem; - top=bottom=left=right=8px
+    padding: 0 0.5rem - top=bottom=0 left=right=8px
+
+-   re-setting - change default user agent styles by your own
+    -   \* {box-sizing: content-box;} - by default in user agent
+    -   \* {box-sizing: border-box;} - heigh and width is calculated including padding and border
+    -   min-width: 700px - could be more, but not less 700px
+    -   overflow: hidden; - if content is out of the box, that part of content would be hidden
+    -   overflow: auto; - Be Careful in usage of 'auto' value because it means different for different properties.

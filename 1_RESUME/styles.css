@@ -1,7 +1,31 @@
-a:where(:not(:hover)) {
-    text-decoration: none;
+* {
+    box-sizing: border-box;
 }
 
-nav a {
-    text-decoration: underline;
+body {
+    font-size: 16px;
+}
+
+main {
+    max-width: 700px;
+    padding: 0 2rem;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    margin: 0 auto;
+}
+
+#testimonials blockquote {
+    border: solid 1px black;
+    padding: 0 0.5rem;
+    margin: o.5rem 0;
+}
+
+.resume-fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.resume-fieldset legend {
+    padding: 0;
 }
