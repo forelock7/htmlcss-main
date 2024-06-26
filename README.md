@@ -380,8 +380,21 @@ This repository is contains the code used in my course "Understanding HTML and C
     padding: 0 0.5rem - top=bottom=0 left=right=8px
 
 -   re-setting - change default user agent styles by your own
+
     -   \* {box-sizing: content-box;} - by default in user agent
     -   \* {box-sizing: border-box;} - heigh and width is calculated including padding and border
     -   min-width: 700px - could be more, but not less 700px
     -   overflow: hidden; - if content is out of the box, that part of content would be hidden
     -   overflow: auto; - Be Careful in usage of 'auto' value because it means different for different properties.
+
+-   Conceptual Aside: Functions - a map of inputs to outputs. CSS is declaritive language.
+-   Calc, min, max, clamp:
+
+    -   max-marging: calc(800px - 2rem)
+    -   max-marging: min(700px, 80%, 2rem)
+    -   max-marging: clamp(700px, 80%, 2rem) - from min value to max
+
+-   Engine Aside: Formatting Contexts:
+    -   Block Formatting context
+    -   Inline Formatting context
+    -   It's all normal flow
