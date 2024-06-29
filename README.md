@@ -414,3 +414,30 @@ This repository is contains the code used in my course "Understanding HTML and C
     div {position: fixed; top: 50px;}
 -   Sticky - laid out as relative to its nearestscrolable ancestor
     nav {position: sticky; top: 0;}
+
+# Section 15: Painting and Images
+
+-   The result what we see in the browser:
+    -   Loading
+    -   Scripting
+    -   Rendering
+    -   Painting
+    -   System
+    -   Idle
+-   Visibility
+    div {visibility: hidden} - element laid out, but paiting skipped.
+-   Z-Index:
+
+    -   https://www.w3.org/TR/CSS22/visuren.html#z-index
+    -   https://www.w3.org/TR/CSS2/zindex.html
+    -   when elements behind or on the top of the othe elements. So they have order of position by Z-axe
+    -   Stacking context - order of painting the elements relativly to other
+    -   Element in html doc create the new stacking context for children
+    -   div {isolation: isolate} - to establish its own islotade stacking context
+
+-   Images: img
+    -   https://picsum.photos/ - one of the image placeholder services
+    -   images - replaced element
+    -   <img src="https://picsum.photos/id/165/200/300" alt="I'd love to be here" />
+    -   <img src="./images/myImage.png" alt="I'd love to be here" />
+    -   alt - appropriate aternative text of the image
