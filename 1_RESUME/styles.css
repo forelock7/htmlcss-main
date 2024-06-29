@@ -29,3 +29,8 @@ main {
 .resume-fieldset legend {
     padding: 0;
 }
+
+nav {
+    position: sticky;
+    top: 0;
+}

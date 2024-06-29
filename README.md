@@ -398,3 +398,19 @@ This repository is contains the code used in my course "Understanding HTML and C
     -   Block Formatting context
     -   Inline Formatting context
     -   It's all normal flow
+
+# Section 14: Box Position
+
+-   Positioning Schemes. CSS relies on coordinate-based and offsetting schemes. It can move around elements in ways that can make them overlap other content:
+
+    -   div {position: static} - initial value
+
+-   Static - laid out as expected according to the calculations for particular formatting context (block/inline)
+-   Relative -the blox is laid out as static, then offset(move) from its position (work with top/bottom/left/right properties)
+    div {position: relative; top: 50px;}
+-   Absolute - laid out outside the normal flow of boxes. It's placed to its nearest non-static ancestor. It does not participate in its parent's formatting context
+    div {position: absolute; top: 50px;} - it will offset <html> root element (initial containing block) if all other elemnts have default 'static' position
+-   Fixed - laid out outside the normal flow of boxes. Its containing block is the viewport.
+    div {position: fixed; top: 50px;}
+-   Sticky - laid out as relative to its nearestscrolable ancestor
+    nav {position: sticky; top: 0;}
