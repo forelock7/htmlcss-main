@@ -34,3 +34,12 @@ nav {
     position: sticky;
     top: 0;
 }
+
+.label-standart {
+    display: block;
+    margin: 0.125rem;
+}
+
+.field {
+    margin-bottom: 1.25rem;
+}

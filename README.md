@@ -441,3 +441,13 @@ This repository is contains the code used in my course "Understanding HTML and C
     -   <img src="https://picsum.photos/id/165/200/300" alt="I'd love to be here" />
     -   <img src="./images/myImage.png" alt="I'd love to be here" />
     -   alt - appropriate aternative text of the image
+
+# Section 16: Flow
+
+-   Display: Inner and outer of element in layout
+
+-   Block
+    display: block;
+    .block2 {marging-bottom: 30px;}
+    .block3 {marging-top: 20px;}
+-   the space between 2 boxes will be 30px, not 50 becouse of overlaping
