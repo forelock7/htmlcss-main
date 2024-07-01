@@ -493,3 +493,6 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 -   Direction:
     body {direction: rtl;}
+
+-   Text-Orientation
+    body {text-orientation: upright;}
