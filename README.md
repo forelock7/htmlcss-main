@@ -496,3 +496,45 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 -   Text-Orientation
     body {text-orientation: upright;}
+
+-   Logical Properties.
+
+    -   Usege of next properties is better than padding-marging in multi lang representation:
+        -inline-start, -inline-end (inline-size), -block-start, -block-end(block-size)
+        Example: marging-inline-start
+    -   Instead margin: 0 0.25rem;
+        Use:
+        margin-inline: .25rem;
+        margin-block: 0;
+    -   Instead max-width: clamp(700px, 50%, 900px);
+        max-inline-size: clamp(700px, 50%, 900px);
+    -   /_ padding: 0 2rem; _/
+        padding-inline: 2rem;
+        padding-block: 0;
+    -   /_ border-left: solid 2px black; _/
+        border-inline-start: solid 2px black;
+        /_ border-right: solid 2px black; _/
+        border-inline-end: solid 2px black;
+    -   /_ border: solid 1px black; _/
+        border-inline: solid 1px black;
+        border-block: solid 1px black;
+    -   /_ margin-bottom: 1.25rem; _/
+        margin-block-end: 1.25rem;
+    -   /_ float: left; _/
+        float: inline-start;
+    -   /_ max-width: 75px; _/
+        max-inline-size: 75px;
+
+-   Sticky Nav Note:
+    /_ inset-inline-start: 0; _/ - somehow it doesn't work
+    top: 0;
+
+-   Inline-Block
+    body {display: inline-block;} - element has its own flow in this way
+
+-   None
+    body {display: none} - never laid out (excluded from the render tree)
+    hidden - laid pout, but not painted. none - not laid out at all
+    <title>, <head> - display: none;
+
+-   Table, List-Item, and More

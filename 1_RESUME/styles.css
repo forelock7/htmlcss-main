@@ -6,18 +6,34 @@ body {
     font-size: 16px;
 }
 
-main {
-    max-width: clamp(700px, 50%, 900px);
-    padding: 0 2rem;
-    border-left: solid 2px black;
-    border-right: solid 2px black;
-    margin: 0 auto;
+nav {
+    position: sticky;
+    /* inset-inline-start: 0; */
+    top: 0;
+    background-color: white;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 0.25rem;
+    /* margin: 0 0.25rem; */
+    margin-inline: 0.25rem;
+    margin-block: 0;
     line-height: 1.5rem;
+}
+
+main {
+    max-inline-size: clamp(700px, 50%, 900px);
+    /* padding: 0 2rem; */
+    padding-inline: 2rem;
+    padding-block: 0;
+    /* border-left: solid 2px black; */
+    border-inline-start: solid 2px black;
+    /* border-right: solid 2px black; */
+    border-inline-end: solid 2px black;
+    /* margin: 0 auto; */
+    margin-inline: auto;
+    margin-block: 0;
 }
 
 #aboutme {
@@ -27,37 +43,52 @@ nav ul li {
 }
 
 #testimonials blockquote {
-    border: solid 1px black;
-    padding: 0 0.5rem;
-    margin: o.5rem 0;
+    /* border: solid 1px black; */
+    border-inline: solid 1px black;
+    border-block: solid 1px black;
+    /* padding: 0 0.5rem; */
+    padding-inline: 0.5rem;
+    padding-block: 0;
+    /* margin: 0.5rem 0; */
+    margin-inline: 0;
+    margin-block: 0.5rem;
 }
 
 .resume-fieldset {
-    border: 0;
+    /* border: none;
     margin: 0;
-    padding: 0;
+    padding: 0; */
+    border-inline: none;
+    border-block: none;
+    padding-inline: 0;
+    padding-block: 0;
+    margin-inline: 0;
+    margin-block: 0;
 }
 
 .resume-fieldset legend {
-    padding: 0;
-}
-
-nav {
-    position: sticky;
-    top: 0;
+    /* padding: 0; */
+    padding-inline: 0;
+    padding-block: 0;
 }
 
 .label-standart {
     display: block;
-    margin: 0.125rem;
+    /* margin: 0.125rem; */
+    margin-inline: 0.125rem;
+    margin-block: 0.125rem;
 }
 
 .field {
-    margin-bottom: 1.25rem;
+    /* margin-bottom: 1.25rem; */
+    margin-block-end: 1.25rem;
 }
 
 .my-picture {
-    float: left;
-    max-width: 75px;
-    margin-right: 1rem;
+    /* float: left; */
+    float: inline-start;
+    /* max-width: 75px; */
+    max-inline-size: 75px;
+    /* margin-right: 1rem; */
+    margin-inline-end: 1rem;
 }
