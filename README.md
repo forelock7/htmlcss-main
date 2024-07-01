@@ -453,6 +453,7 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   the space between 2 boxes will be 30px, not 50 becouse of overlaping
 
 -   Float - put element aside content
+
     -   text will be on the right of image
         <img src="images/man.png" class="my-picture" />
         .my-picture {
@@ -463,3 +464,15 @@ This repository is contains the code used in my course "Understanding HTML and C
     -   if use clear property:
         img {clear: both} - there is no any content aside of image
     -   Floated element could be outside parent element box
+
+-   Inline, Vertical Align, Line-Height and More.
+    -   inline - formatting context, boxes are laid out horizontally. Horizontal marging, borders and padding are respected between these boxes.
+        display: inline;
+    -   line-heigh: 5px - heigh of text line inside element, not all box
+    -   text-alighn: center; - align of text line inside of elements
+    -   Midified a list of titles:
+        nav ul li {
+        display: inline;
+        margin: 0 0.25rem;
+        line-height: 1.5rem;
+        }
