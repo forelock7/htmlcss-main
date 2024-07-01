@@ -485,6 +485,11 @@ This repository is contains the code used in my course "Understanding HTML and C
     }
 
 -   Writing Mode:
+
     -   Commonly 'Inline' (from left to right) and 'Block' (from top to bottom)
-    writing-mode: vertical-rl; - right to left
-    writing-mode: horisontal-bt; -from bottom to top
+        body {writing-mode: vertical-rl;} - right to left
+        body {writing-mode: horisontal-bt;} -from bottom to top
+    -   marging and padding properties are not multi lang, so wrighting mode is not applied to those properties
+
+-   Direction:
+    body {direction: rtl;}
