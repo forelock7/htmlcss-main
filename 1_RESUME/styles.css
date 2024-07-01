@@ -43,3 +43,9 @@ nav {
 .field {
     margin-bottom: 1.25rem;
 }
+
+.my-picture {
+    float: left;
+    max-width: 75px;
+    margin-right: 1rem;
+}

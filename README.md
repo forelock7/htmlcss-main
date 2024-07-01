@@ -451,3 +451,15 @@ This repository is contains the code used in my course "Understanding HTML and C
     .block2 {marging-bottom: 30px;}
     .block3 {marging-top: 20px;}
 -   the space between 2 boxes will be 30px, not 50 becouse of overlaping
+
+-   Float - put element aside content
+    -   text will be on the right of image
+        <img src="images/man.png" class="my-picture" />
+        .my-picture {
+        float: left;
+        max-width: 75px;
+        margin-right: 1rem;
+        }
+    -   if use clear property:
+        img {clear: both} - there is no any content aside of image
+    -   Floated element could be outside parent element box
