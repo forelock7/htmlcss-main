@@ -483,3 +483,8 @@ This repository is contains the code used in my course "Understanding HTML and C
     ...
     display: flow-root;
     }
+
+-   Writing Mode:
+    -   Commonly 'Inline' (from left to right) and 'Block' (from top to bottom)
+    writing-mode: vertical-rl; - right to left
+    writing-mode: horisontal-bt; -from bottom to top
