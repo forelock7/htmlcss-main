@@ -466,6 +466,7 @@ This repository is contains the code used in my course "Understanding HTML and C
     -   Floated element could be outside parent element box
 
 -   Inline, Vertical Align, Line-Height and More.
+
     -   inline - formatting context, boxes are laid out horizontally. Horizontal marging, borders and padding are respected between these boxes.
         display: inline;
     -   line-heigh: 5px - heigh of text line inside element, not all box
@@ -476,3 +477,9 @@ This repository is contains the code used in my course "Understanding HTML and C
         margin: 0 0.25rem;
         line-height: 1.5rem;
         }
+
+-   flow-root and BFCs - To overcome overlaping of image inside box (parent element) use 'flow-root', instead of inherited 'blox':
+    #aboutme {
+    ...
+    display: flow-root;
+    }
