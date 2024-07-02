@@ -11,15 +11,24 @@ nav {
     /* inset-inline-start: 0; */
     top: 0;
     background-color: white;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 0;
 }
 
 nav ul li {
-    display: inline;
+    /* display: inline; */
     /* margin: 0 0.25rem; */
     margin-inline: 0.25rem;
     margin-block: 0;
     line-height: 1.5rem;
+    list-style: none;
 }
 
 main {
@@ -36,10 +45,27 @@ main {
     margin-block: 0;
 }
 
+.flex-header,
+.motto {
+    flex-basis: 100%;
+}
+
 #aboutme {
     background-color: black;
     color: white;
-    display: flow-root;
+    /* display: flow-root; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aboutme aside {
+    order: 10;
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
 #testimonials blockquote {
@@ -52,6 +78,15 @@ main {
     /* margin: 0.5rem 0; */
     margin-inline: 0;
     margin-block: 0.5rem;
+}
+
+#testimonials h2 {
+    order: -2;
+}
+
+blockquote.featured {
+    order: -1;
+    flex: 1 1 auto;
 }
 
 .resume-fieldset {
@@ -86,7 +121,7 @@ main {
 
 .my-picture {
     /* float: left; */
-    float: inline-start;
+    /* float: inline-start; */
     /* max-width: 75px; */
     max-inline-size: 75px;
     /* margin-right: 1rem; */

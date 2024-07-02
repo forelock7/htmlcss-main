@@ -538,3 +538,74 @@ This repository is contains the code used in my course "Understanding HTML and C
     <title>, <head> - display: none;
 
 -   Table, List-Item, and More
+
+# Section 17: Flexbox
+
+-   Flex Formatting Context. In flex layout we have new axes:
+
+    -   Main (in block layout - inline)
+    -   Cross (in block layout - block)
+
+-   There is no need a writting mode to multi lang
+    div {display: flex;} - div is block, but its direct children are flex items
+
+-   Flow Direction.
+
+    -   flex-direction: row; - like inline, horizontaly
+    -   flex-direction: row-reverse;
+    -   flex-direction: column; - like block, vertical
+    -   flex-direction: column-reverse;
+
+-   Display Order.
+
+    -   Example 1:
+        #aboutme {display: flex;}
+        #aboutme aside {order: 10;} - <aside> element is not last sibling in #aboutme, but will be displayd as a last
+    -   Example 2:
+        #testimonials {display: flex;flex-direction: row-reverse;}
+        #testimonials h2 {order: -2;} - first in order (from right)
+        blockquote.featured {order: -1;} - second in order (from right)
+
+-   Wrapping and Overflow
+    #aboutme {display: flex; overflow: hidden;} - flex item will not overlap the blox container(overlaped part is not visible)
+    #aboutme {display: flex; overflow: scroll;} - flex item will not overlap the blox container(overlaped part is not visible), but scrollbar appears
+    #aboutme {display: flex; overflow: auto;} - if needed scroll bar appears
+    nav ul {display: flex; flex-wrap: wrap;} - new flex line is created if items can't be placed
+
+-   Flex:
+
+        -   Flex box -> | flex item 1 | flex item 2 | flex item 3 | positive free space |
+        -   flexItem {flex-grow: 1;} - if all items have the same value, positive free space will be split equally with proportions and extend all items
+        -   flex-grow: 0; - isn't extended with free space
+
+        -   Flex box -> | flex item 1 | flex item 2 | flex i... negative free space |
+        -   flexItem {flex-shrink: 1;} - if all items have the same value, negative free space will be split equally with proportions and shrink all items
+        -   flex-shrink: 0; - item isn't shrinked
+
+        -   flexItem {flex-basis: 50%;} - we can garantee that item will not extended and combining with flex-shrink: 0; not shrinked
+        - .flex-header, .motto {flex-basis: 100%;}
+        - flex-basis: auto - based on content
+
+        - item {flex: 1 30%} - flex-grow and flex-basis
+        - item {flex: 1 2} - flex-grow and flex-shrink
+        - item {flex: 1 2 auto} - flex-grow, flex-shrink and flex-basis
+
+-   Alignment.
+
+    -   {justify-content: flex-start;} - initial value - align items to the left
+    -   {justify-content: flex-end;} - align items to the right
+    -   {justify-content: flex-center;} - align items to the center
+    -   {justify-content: space-between;} - distribute items on the line equally
+    -   {justify-content: space-around;} - the same as 'space-between', but gives more space at the beginning and at the end
+
+    -   alighn-content: stretch - distribute content in lines equaly in the box
+    -   align-item: flex-start (to all items) - what to do with 'cross' space direction (bottom)
+    -   align-self: flex-start (to particular items) - what to do with 'cross' space direction (bottom)
+    -   : baseline - alighn to the bottom of the characters
+
+-   Collapse.
+
+    -   it doesn't behave in browser as in spec
+
+-   Inline-Flex
+    -   {display: inline-box} - Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
