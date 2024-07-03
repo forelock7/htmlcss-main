@@ -609,3 +609,106 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 -   Inline-Flex
     -   {display: inline-box} - Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+
+# Section 18: Grid
+
+-   Grid Formatting Context - display: grid;
+
+    -   Grid enforces 2-dimensional alignment, uses a top-down approach to layout
+    -   Flexbox focuses on space distribution within an axis, uses a simpler bottom-up approach to layout
+
+    -   Grid lines(always there is one on the left, second need specify) -> '|' inside is 'Column'('Track').
+        Second line specify by size to it from first line
+    -   Row(track)
+    -   Intersection of horizontal and vertical lines - 'Grid Cell'
+
+-   Conceptual Aside: Fractional Units
+
+-   Track Sizing. -
+    #portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; - specify 4 colums
+    grid-template-rows: 1fr 1fr; - 2 rows
+    grid-gap: 10px; - width of grid line
+    }
+    #portfolio img {
+    max-inline-size: 100%; - to make grid cells with the same size (avoid overlaping/extending cells by image content)
+    }
+
+    -   repeat() function:
+        grid-template-columns: repeat(4, 1fr); - 4 colums
+        grid-template-rows: repeat(2, 1fr); - 2 rows
+    -   grid-template: repeat(2, 1fr) / repeat(4, 1fr); - 2rows and 4 columns
+
+-   Item Placement
+
+    -   img.anchor {grid-row-start: 2; grid-column-start: 3;} - move image into 2 row and column 3
+    -   grid-column-end: 5 - overlaping into column 4
+    -   grid-column 3/5; === grid-column-start: 3; grid-column-end: 5;
+    -   grid-area: 1 / 3 / 3 / 5 ==== grid-row-start: 1; grid-row-end: 3; grid-column-start: 3; grid-column-end: 5
+    -   grid-row: 1 / span 2 === grid-row-start: 1; grid-row-end: 3;
+
+    -   placing items into grid by name:
+        #portfolio {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+        grid-template-areas:
+        "portfolio anchor img1 img2 img3"
+        "portfolio anchor img4 img5 img6";
+        grid-gap: 10px;
+        }
+        #portfolio h2 {
+        grid-area: portfolio;
+        }
+        img.anchor {
+        grid-area: anchor;
+        }
+
+-   Track Repetition - space-sensitive track repetition and automatic addition of rows or columns to accommodate additional content:
+
+    -   if needed browser engine create rows implicitly. To
+        grid-auto-rows: 150px; - give them size we can specify it
+        grid-auto-flow: column; - will be created not row, but columns
+
+-   Alignment and Spacing
+    align-content
+    justify-content
+    align-items
+    justify-items
+
+    -   Example:
+        #portfolio {
+        ....
+        align-items: end;
+        }
+        #portfolio h2 {
+        grid-area: portfolio;
+        align-self: start;
+        }
+        img.anchor {
+        grid-area: anchor;
+        align-self: start;
+        }
+
+-   Layering - ability to overlap content and control layering with z-index
+    grid-row: 1;
+    grid-column: 4;
+    z-index: 1; - to overlap other content in the same grid cell
+
+-   A Visual Change - put all content into the center of gid (2 column of 3)
+    main {
+    padding-block: 0;
+    margin-block: 0;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px; - define 2, 3 and 4 grid lines (first is default)
+    }
+    main > \* {
+    grid-column: 2; - start from 2 grid line
+    }
+
+        - extend one row tofrom 2 column to 1 and 3:
+        .full-bleed {
+        grid-column: 1 / span 3;
+        padding-inline: 2rem;
+
+    }

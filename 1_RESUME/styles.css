@@ -4,6 +4,9 @@
 
 body {
     font-size: 16px;
+    display: grid;
+    margin-inline: 0;
+    margin-block: 0;
 }
 
 nav {
@@ -32,17 +35,28 @@ nav ul li {
 }
 
 main {
-    max-inline-size: clamp(700px, 50%, 900px);
+    /* max-inline-size: clamp(700px, 50%, 900px); */
     /* padding: 0 2rem; */
-    padding-inline: 2rem;
+    /* padding-inline: 2rem; */
     padding-block: 0;
     /* border-left: solid 2px black; */
-    border-inline-start: solid 2px black;
+    /* border-inline-start: solid 2px black; */
     /* border-right: solid 2px black; */
-    border-inline-end: solid 2px black;
+    /* border-inline-end: solid 2px black; */
     /* margin: 0 auto; */
-    margin-inline: auto;
+    /* margin-inline: auto; */
     margin-block: 0;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+}
+
+main > * {
+    grid-column: 2;
+}
+
+.full-bleed {
+    grid-column: 1 / span 3;
+    padding-inline: 2rem;
 }
 
 .flex-header,
@@ -60,6 +74,31 @@ main {
 
 #aboutme aside {
     order: 10;
+}
+
+#portfolio {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+    grid-template-areas:
+        "portfolio anchor img1 img2 img3"
+        "portfolio anchor img4 img5 img6";
+    grid-gap: 10px;
+    align-items: end;
+}
+
+#portfolio h2 {
+    grid-area: portfolio;
+    align-self: start;
+    margin-block: 0;
+}
+
+#portfolio img {
+    max-inline-size: 100%;
+}
+
+img.anchor {
+    grid-area: anchor;
+    align-self: start;
 }
 
 #testimonials {
