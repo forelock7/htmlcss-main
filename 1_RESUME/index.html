@@ -3,6 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <title>Resume of Tony Alicea</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -19,7 +29,7 @@
         </nav>
         <main>
             <h1>Resume</h1>
-            <section>
+            <section class="animate__animated animate__fadeInUp">
                 <h2>Tony Alicea</h2>
                 <p>UX Designer, and Instructor</p>
                 <dl>
@@ -31,9 +41,19 @@
                     </dd>
                     <dt>Phone</dt>
                     <dd>555-555-1111</dd>
-                    <dt>Twitter</dt>
+                    <dt>
+                        <img
+                            src="images/twitter.svg"
+                            class="social_logo"
+                        />Twitter
+                    </dt>
                     <dd><a href="https://twitter.com">@anthonypalicea</a></dd>
-                    <dt>YouTube</dt>
+                    <dt>
+                        <img
+                            src="images/youtube.svg"
+                            class="social_logo"
+                        />YouTube
+                    </dt>
                     <dd>
                         <a href="https://youtube.com/tonyalicea">TonyAlice</a>
                     </dd>
@@ -52,7 +72,7 @@
                 <aside class="motto">
                     <small>Dont't imitate, understand!</small>
                 </aside>
-                <footer>Contact me</footer>
+                <footer><a href="#contactme">Contact me</a></footer>
             </article>
 
             <section id="sevices">
@@ -239,7 +259,7 @@
                             <input type="checkbox" id="asap" name="asap" />
                         </p>
                     </fieldset>
-                    <button type="submit">Send</button>
+                    <button type="submit" class="button">Send</button>
                 </form>
             </section>
         </main>

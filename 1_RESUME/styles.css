@@ -7,6 +7,29 @@ body {
     display: grid;
     margin-inline: 0;
     margin-block: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2 {
+    font-family: "Dosis", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #3d3d3d;
+}
+
+h1 {
+    margin-block-end: 0;
+}
+
+h2 {
+    margin-block-end: 0.75rem;
+}
+
+input,
+select,
+textarea {
+    font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -48,10 +71,15 @@ main {
     margin-block: 0;
     display: grid;
     grid-template-columns: 50px 1fr 50px;
+    row-gap: 10px;
 }
 
 main > * {
     grid-column: 2;
+}
+
+.social_logo {
+    inline-size: 1rem;
 }
 
 .full-bleed {
@@ -60,7 +88,8 @@ main > * {
 }
 
 .flex-header,
-.motto {
+.motto,
+#aboutme footer {
     flex-basis: 100%;
 }
 
@@ -72,8 +101,23 @@ main > * {
     flex-wrap: wrap;
 }
 
+#aboutme h2 {
+    color: white;
+}
+
+#aboutme footer {
+    text-align: center;
+}
+
+#aboutme footer a,
+#aboutme footer a:visited,
+#aboutme footer a:hover {
+    color: white;
+}
+
 #aboutme aside {
     order: 10;
+    text-align: center;
 }
 
 #portfolio {
@@ -84,6 +128,9 @@ main > * {
         "portfolio anchor img4 img5 img6";
     grid-gap: 10px;
     align-items: end;
+    background-color: rgb(247, 77, 101, 0.9);
+    /* background-color: #f74d65; */
+    padding-block: 1rem;
 }
 
 #portfolio h2 {
@@ -94,6 +141,11 @@ main > * {
 
 #portfolio img {
     max-inline-size: 100%;
+}
+
+#portfolio img:hover {
+    opacity: 0.7;
+    transition: opacity 0.5s;
 }
 
 img.anchor {
@@ -123,9 +175,13 @@ img.anchor {
     order: -2;
 }
 
-blockquote.featured {
+#testimonials blockquote.featured {
     order: -1;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
+    background-color: black;
+    color: white;
+    margin-inline-start: 1rem;
+    font-weight: bold;
 }
 
 .resume-fieldset {
@@ -149,13 +205,32 @@ blockquote.featured {
 .label-standart {
     display: block;
     /* margin: 0.125rem; */
-    margin-inline: 0.125rem;
     margin-block: 0.125rem;
+}
+
+.label-standart,
+.resume-fieldset legend {
+    font-size: 0.875rem;
 }
 
 .field {
     /* margin-bottom: 1.25rem; */
     margin-block-end: 1.25rem;
+}
+
+.button {
+    background-color: #000000;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-inline: none;
+    border-block: none;
+}
+
+.button:hover {
+    background-color: rgb(247, 77, 101, 0.9);
+    transition: background-color 0.5s;
 }
 
 .my-picture {

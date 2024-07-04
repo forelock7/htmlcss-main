@@ -499,7 +499,7 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 -   Logical Properties.
 
-    -   Usege of next properties is better than padding-marging in multi lang representation:
+    -   Usage of next properties is better than padding-marging in multi lang representation:
         -inline-start, -inline-end (inline-size), -block-start, -block-end(block-size)
         Example: marging-inline-start
     -   Instead margin: 0 0.25rem;
@@ -712,3 +712,97 @@ This repository is contains the code used in my course "Understanding HTML and C
         padding-inline: 2rem;
 
     }
+
+# Section 19: Fonts, Colors and More
+
+-   Fonts
+
+    -   h1,h2 {font-family: Arial, Helvetica, sans-serif;} - font families in order of availibility in browser
+    -   Google fonts: https://fonts.google.com/selection/embed
+        -   add links to the head of html:
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        -   add css styles:
+            font-family: "Montserrat", sans-serif;
+    -   text-transform: uppercase;
+
+-   Hexadecimal, RBG, and Named Colors
+
+    -   RGB - combinations of Red, Green, Blue
+    -   Decimal(10) representation - rgb(247, 77, 101)
+    -   Hexidecimal(16) representation - #f74d65
+
+    -   background-color: black; - background color
+    -   color: white; - text color
+
+-   Opacity - see-though - is oposite to transparency
+
+    -   background-color: rgb(247, 77, 101, 0.9); - 0.9 is opacity property
+    -   opacity could be applied to any element:
+        #portfolio img:hover {opacity: 0.7; }
+
+-   Backgrounds:
+
+    -   div {
+        background-image: url(images/unsplash_background.jpg);
+        background-size: cover;
+        color: white;
+        }
+
+-   Transitions - allows property changes in CSS values to occur smoothly over a specified duration - transition-property, tarnsition-... - #portfolio img:hover {opacity: 0.7;transition: opacity 1s;} - ease - curve how transition happens:
+    #portfolio img:hover {opacity: 0.7;transition: opacity 1s ease-out;} // liniar, etc - more example:
+    .button {
+    background-color: #000000;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    }
+    .button:hover {
+    background-color: rgb(247, 77, 101, 0.9);
+    transition: background-color 0.5s;
+    }
+
+-   Animations - keyframes (https://animate.style/, https://github.com/animate-css/animate.css)
+
+    -   Example (https://github.com/animate-css/animate.css/blob/main/source/fading_entrances/fadeInUp.css):
+        @keyframes fadeInUp {
+        //// start
+        from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+        }
+        //// finish
+        to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        }
+        }
+        //// class to use in code
+        .fadeInUp {
+        animation-name: fadeInUp;
+        }
+    -   Use by adding link to head from (https://animate.style/)
+    <head>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    </head>
+    -   use class from docs:
+    <h1 class="animate__animated animate__fadeInUp">An animated element</h1>
+
+-   Images: SVGs - drawings - it's a scaleable image which is drawn by browser, just give an instructions
+
+    -   download svg file and refer in html to it:
+        <dt><img src="images/twitter.svg" class="social_logo" />Twitter</dt>
+        .social_logo { inline-size: 1rem;}
+    -   <svg> element could be directly put into html
+
+-   A Semantic Change
+
+-   Visual Design and User Experience
+    -   <footer><a href="#contactme">Contact me</a></footer>
+    -
