@@ -852,3 +852,22 @@ This repository is contains the code used in my course "Understanding HTML and C
     #aboutme {background-color: white;color: black;}
     #contactme {display: none;}
     }
+
+# Section 21: Saving Time and Effort
+
+-   Custom Properties for Cascading Variables
+    #aboutme {
+    ...
+    --test-color: blue;
+    }
+    #aboutme aside {
+    ...
+    color: var(--test-color, red);
+    } - Where:
+    --test-color - custom property
+    color: var(--test-color, red); - usage of custom property as var. 'red' is applied if '--test-color' doesn't exist. Custom properties is applied only in inherited elements!!!
+
+    -   To use custom property everywhere use ':root' pseudo class:
+        :root {--accent-color: rgb(247, 77, 101, 0.9);}
+
+-   Minification - remove extra characters from document as possible

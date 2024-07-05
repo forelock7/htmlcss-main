@@ -1,3 +1,7 @@
+:root {
+    --accent-color: rgb(247, 77, 101, 0.9);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -131,7 +135,7 @@ main > * {
         "anchor img1";
     grid-gap: 10px;
     align-items: end;
-    background-color: rgb(247, 77, 101, 0.9);
+    background-color: var(--accent-color);
     /* background-color: #f74d65; */
     padding-block: 1rem;
 }
@@ -232,7 +236,7 @@ img.anchor {
 }
 
 .button:hover {
-    background-color: rgb(247, 77, 101, 0.9);
+    background-color: var(--accent-color);
     transition: background-color 0.5s;
 }
 
