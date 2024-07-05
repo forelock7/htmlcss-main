@@ -885,3 +885,7 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   Being Better Than Frameworks:
     -   Bootstrap (lot of div/span, there is mno semantic choice), usage only predefined classes
     -   Tailwind - semantic a bit better (not only div/span)
+
+# Section 23: Game Changing CSS
+
+- Next is game changing CSS
