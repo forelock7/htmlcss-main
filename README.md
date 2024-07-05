@@ -879,3 +879,9 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   HTML Validation
     -   https://validator.w3.org/
     -   Validate your HTML, check the errors
+
+# Section 22: CSS Frameworks
+
+-   Being Better Than Frameworks:
+    -   Bootstrap (lot of div/span, there is mno semantic choice), usage only predefined classes
+    -   Tailwind - semantic a bit better (not only div/span)
