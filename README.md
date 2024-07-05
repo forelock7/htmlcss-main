@@ -806,3 +806,49 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   Visual Design and User Experience
     -   <footer><a href="#contactme">Contact me</a></footer>
     -
+
+# Section 20: Responsiveness and Querying Media
+
+-   Media - means by which something is comunicaed or expressed (a screen, paper, spoken, with a braille device, etc)
+
+-   Media Queries - '@media ... {...}'
+
+    -   By default CSS rules has media="all":
+          <link rel="stylesheet" href="styles.css" media="all" />
+    -   Other values: madia="print"
+    -   Also some specific rules could be applied:
+        @media {...}
+
+-   Viewports and Zoom:
+
+    -   When you need to treat viewport according to actual width (when use phone or tablet instead of laptop):
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    -   "width=device-width" - intend viewport to be the actual width of device
+    -   "initial-scale=1" - don't zoom up
+
+-   Media Features
+
+    -   @media screen and (max-width: 767.98px) {} - apply certain rules if scren width equal or less 767.98px (breakpoint)
+    -   @media screen and (min-width: 1200px) {} - apply certain rules if scren width equal or more
+
+-   Media Query Range Syntax
+
+    -   @media screen and (767.98px < width <1200px) {}
+    -   @media screen and (max-width: 767.98px) === @media screen and (width <=767.98px)
+
+-   Mobile First - approach when you create styles for mobile initialy and then via media adjust it for bigger screens
+
+-   Images: srcset and picture
+
+    -   https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+    -   Display particular images (with resolutions) for particular media queries:
+        <img srcset="elva-fairy-480w.jpg 480w, elva-fairy-800w.jpg 800w"
+        sizes="(max-width: 600px) 480px, 800px"
+        src="elva-fairy-800w.jpg"
+        alt="Elva dressed as a fairy" />
+
+-   Print - change something for printing of site:
+    @media print {
+    #aboutme {background-color: white;color: black;}
+    #contactme {display: none;}
+    }
