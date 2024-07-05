@@ -871,3 +871,11 @@ This repository is contains the code used in my course "Understanding HTML and C
         :root {--accent-color: rgb(247, 77, 101, 0.9);}
 
 -   Minification - remove extra characters from document as possible
+
+    -   There are extantion to minify files, shrink the text, like all css file text in one line.
+    -   Then use this file in html instead of initial:
+    <link rel="stylesheet" href="styles.min.css" media="all" />
+
+-   HTML Validation
+    -   https://validator.w3.org/
+    -   Validate your HTML, check the errors
