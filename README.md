@@ -934,7 +934,7 @@ This repository is contains the code used in my course "Understanding HTML and C
         }
         ------
         blockquote {
-            &.featured {     ----------- use '&' because 'blockquote.featured'=blockquote{&.featured}  
+            &.featured {     ----------- use '&' because 'blockquote.featured'=blockquote{&.featured}
             order: -1;
             flex: 1 0 auto;
             background-color: black;
@@ -943,3 +943,27 @@ This repository is contains the code used in my course "Understanding HTML and C
             font-weight: bold;
         }
         }
+
+-   210. & and Pseudo-classes
+         footer {
+         text-align: center;
+         }
+
+         footer a,
+         footer a:visited,
+         footer a:hover {
+         color: white;
+         }
+
+         ***
+
+         footer {
+         text-align: center;
+         a {
+         &,
+         &:visited,
+         &:hover {
+         color: white;
+         }
+         }
+         }
