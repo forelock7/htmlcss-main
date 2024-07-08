@@ -81,6 +81,16 @@ main {
     > * {
         grid-column: 2;
     }
+
+    @media screen {
+        @media (min-width: 768px) {
+            grid-template-columns: 50px 1fr 50px;
+        }
+
+        @media (min-width: 1200px) {
+            grid-template-columns: 1fr 900px 1fr;
+        }
+    }
 }
 
 .social_logo {
@@ -90,6 +100,10 @@ main {
 .full-bleed {
     grid-column: 1 / span 3;
     padding-inline: 2rem;
+
+    @media screen and (min-width: 1200px) {
+        padding-inline: 15%;
+    }
 }
 
 .flex-header,
@@ -126,6 +140,18 @@ main {
         order: 10;
         text-align: center;
     }
+
+    @media screen {
+        @media (min-width: 768px) {
+            justify-content: initial;
+            text-align: initial;
+        }
+    }
+
+    @media print {
+        background-color: white;
+        color: black;
+    }
 }
 
 #portfolio {
@@ -158,6 +184,13 @@ main {
             grid-area: anchor;
             align-self: start;
         }
+    }
+
+    @media screen and (min-width: 768px) {
+        grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+        grid-template-areas:
+            "portfolio anchor img1 img2 img3"
+            "portfolio anchor img4 img5 img6";
     }
 }
 
@@ -248,46 +281,13 @@ main {
     max-inline-size: 75px;
     /* margin-right: 1rem; */
     margin-inline-end: 0;
-}
 
-@media screen and (min-width: 768px) {
-    main {
-        grid-template-columns: 50px 1fr 50px;
-    }
-
-    #aboutme {
-        justify-content: initial;
-        text-align: initial;
-    }
-
-    .my-picture {
+    @media screen and (min-width: 768px) {
         margin-inline-end: 1rem;
-    }
-
-    #portfolio {
-        grid-template: repeat(2, 1fr) / repeat(5, 1fr);
-        grid-template-areas:
-            "portfolio anchor img1 img2 img3"
-            "portfolio anchor img4 img5 img6";
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    main {
-        grid-template-columns: 1fr 900px 1fr;
-    }
-
-    .full-bleed {
-        padding-inline: 15%;
     }
 }
 
 @media print {
-    #aboutme {
-        background-color: white;
-        color: black;
-    }
-
     #contactme {
         display: none;
     }

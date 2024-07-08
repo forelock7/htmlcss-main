@@ -967,3 +967,46 @@ This repository is contains the code used in my course "Understanding HTML and C
          }
          }
          }
+
+-   211.    at-rules and Nesting
+
+            @media screen and (min-width: 768px) {
+            main {
+            grid-template-columns: 50px 1fr 50px;
+            }
+            }
+            @media screen and (min-width: 1200px) {
+            main {
+            grid-template-columns: 1fr 900px 1fr;
+            }
+            }
+
+            ***
+
+            main {
+            @media screen {
+            @media (min-width: 768px) {
+            grid-template-columns: 50px 1fr 50px;
+            }
+
+                    @media (min-width: 1200px) {
+                        grid-template-columns: 1fr 900px 1fr;
+                    }
+                }
+
+            }
+            ////
+            @media print {
+            #aboutme {
+            display: none;
+            }
+            }
+
+            ***
+
+            #aboutme {
+            @media print {
+            background-color: white;
+            color: black;
+            }
+            }
