@@ -888,4 +888,35 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 # Section 23: Game Changing CSS
 
-- Next is game changing CSS
+-   Next is game changing CSS
+
+# Section 24: CSS Nesting
+
+-   208. The Nesting Module - allows related styles place in one structure
+         .foo {
+         color: red;
+         }
+         .foo .bar {
+         font-size: 1.4rem;
+         }
+
+    ***
+
+    .foo {
+    color: red;
+    .foo .bar {
+    font-size: 1.4rem;
+    }
+    }
+
+    ***
+
+    main { + artical {...}; > p {...};
+    ~ main {...};
+    }
+
+    ***
+
+    main { & + artical {...}; & > p {...};
+    & ~ main {...};
+    }
