@@ -920,3 +920,26 @@ This repository is contains the code used in my course "Understanding HTML and C
     main { & + artical {...}; & > p {...};
     & ~ main {...};
     }
+
+-   209. Nesting in Practice
+
+
+        blockquote.featured {
+            order: -1;
+            flex: 1 0 auto;
+            background-color: black;
+            color: white;
+            margin-inline-start: 1rem;
+            font-weight: bold;
+        }
+        ------
+        blockquote {
+            &.featured {     ----------- use '&' because 'blockquote.featured'=blockquote{&.featured}  
+            order: -1;
+            flex: 1 0 auto;
+            background-color: black;
+            color: white;
+            margin-inline-start: 1rem;
+            font-weight: bold;
+        }
+        }
