@@ -1,0 +1,6 @@
+img {
+    &.anchor {
+        grid-area: anchor;
+        align-self: self-end;
+    }
+}

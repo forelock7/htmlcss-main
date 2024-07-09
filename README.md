@@ -1010,3 +1010,76 @@ This repository is contains the code used in my course "Understanding HTML and C
             color: black;
             }
             }
+
+# Section 25: Layers
+
+-   213. Cascade Layers (@layer)
+
+    -   cascade layers provide a structured way to orginize a nd balane concerns within a single origin
+
+    audio {} - higher priority
+    @layer reset{ audio[control] {}}
+
+-   214. Defining Layers
+
+
+        -   cascade layers are sorted by the order in which they first are declared, nested layers grouped within their parent layer.
+
+        -   Can be declared:
+            1. By @import rule with the layer keyword layer() function, assigning the contents of the imported file into that layer.
+               @import url(resume.css)
+               @import url(resume.css) layer(resume);
+            2. By @layer block at-rule, assigning its child style rules into that layer.
+               @import url(resume.css) layer(resume);
+               @layer tonyresume {
+               body {
+               font-size: 40px;
+               }
+               }
+               @layer customstyles {
+               @layer tonyresume {
+               body {
+               font-size: 24px; ---- higest priority
+               }
+               }
+               }
+               //@layer resume, tonyresume, customstyles.tonyresume; - the same priority
+            3. By a @layer statement ar-rule, declaring a named layer without assigning any rules.
+                @layer resume, customstyles.tonyresume, tonyresume;
+                @import url(resume.css) layer(resume);
+                @layer tonyresume {
+                body {
+                font-size: 40px; -- highest priority beacuse of first line
+                }
+                }
+                @layer customstyles {
+                @layer tonyresume {
+                body {
+                font-size: 24px;
+                }
+                }
+                }
+
+-   215. Layers and the Cascade
+
+    -   Cascade layers (like declarations) are sorted by order of appearance.
+
+    -   When comparing declarations that belong to different layers, then for normal rules the declaration whose cascade layer is latest in the layer order wins, and for important rules the declaration whose cascade layer is earliest wins
+        @layer resume, customstyles.tonyresume, tonyresume; -- tonyresume wins
+
+-   216. Layers in Practice
+
+
+        -   override by lightblue color
+         @layer resume, customstyles.tonyresume;
+         @import url(resume.css) layer(resume);
+         section { ---- highest priority
+         padding: 1.5rem;
+         }
+         @layer customstyles {
+         @layer tonyresume {
+         :root {
+         --accent-color: lightblue;
+         }
+         }
+         }
