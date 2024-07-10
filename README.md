@@ -1083,3 +1083,37 @@ This repository is contains the code used in my course "Understanding HTML and C
          }
          }
          }
+
+# Section 26: Container Queries and Units
+
+-   217. Container Queries and Units (@container)
+
+-   218. The Containment Module
+
+-   219. Containment Contexts and Queries
+
+
+        container-type: inline-size;
+        ...
+        @container (width >= 768px) {
+            grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+            grid-template-areas:
+                "portfolio anchor img1 img2 img3"
+                "portfolio anchor img4 img5 img6";
+        }
+        ------
+        container: portfoliomain inline-size; - the same as previous but with name of container
+        ...
+        @container portfoliomain (width >= 768px) {
+            grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+            grid-template-areas:
+                "portfolio anchor img1 img2 img3"
+                "portfolio anchor img4 img5 img6";
+        }
+
+        - this approach does not let change size of pictures during changing the browser window.
+
+-   220. Container Query Units
+        #portfolio-pics {
+                ....
+                width: 90cqi; --- %
