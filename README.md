@@ -1114,6 +1114,45 @@ This repository is contains the code used in my course "Understanding HTML and C
         - this approach does not let change size of pictures during changing the browser window.
 
 -   220. Container Query Units
-        #portfolio-pics {
-                ....
-                width: 90cqi; --- %
+         #portfolio-pics {
+         ....
+         width: 90cqi; --- %
+
+# Section 27: The superpower of :has
+
+-   223. The Relational Pseudo-class
+
+    -   Pseudo-class (for :has) - selection based on the state of the element, including the state if its children.
+    -   ul:has(li.list) {...} - gives us possibility to select parent element by its children
+    -   ul:has(> p.list) {...} - immediate child
+
+-   224. :has in Practice
+
+
+        -   make bold <label> element if its sibbling elemens in focus:
+            .label-standard {
+            ....
+            &:has(~ input:focus, ~ select:focus, ~ textarea:focus) {
+            font-weight: bold;
+            }
+            }
+
+        - change the whole form if some element in focus inside:
+        form:has(input:focus, select:focus, textarea:focus) {
+        border-inline-start: solid 2px #ccc;
+        padding-inline-start: 1rem;
+        }
+
+        - Make bold text in sibbling element to form
+        #contactme h2 {
+            &:has(~ form input:focus, ~ form select:focus, ~ form textarea:focus) {
+                font-weight: bold;
+            }
+        }
+
+-   225. :has in Practice (Part 2)
+-   226. Native Over Custom
+    -   (Browser) Native.
+        Features built into browser, rather than manually created using JavaScript.
+        Native features will always be faster, and more future-proof. Just be sure they're ready and supported.
+        Try first make something by HTML and CSS rather than using JavaScript.

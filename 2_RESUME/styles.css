@@ -270,13 +270,17 @@ main {
     }
 }
 
-.label-standart {
+.label-standard {
     display: block;
     /* margin: 0.125rem; */
     margin-block: 0.125rem;
+
+    &:has(~ input:focus, ~ select:focus, ~ textarea:focus) {
+        font-weight: bold;
+    }
 }
 
-.label-standart,
+.label-standard,
 .resume-fieldset legend {
     font-size: 0.875rem;
 }
@@ -284,6 +288,17 @@ main {
 .field {
     /* margin-bottom: 1.25rem; */
     margin-block-end: 1.25rem;
+}
+
+form:has(input:focus, select:focus, textarea:focus) {
+    border-inline-start: solid 2px #ccc;
+    padding-inline-start: 1rem;
+}
+
+#contactme h2 {
+    &:has(~ form input:focus, ~ form select:focus, ~ form textarea:focus) {
+        font-weight: bold;
+    }
 }
 
 .button {
