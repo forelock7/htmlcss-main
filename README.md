@@ -1156,3 +1156,9 @@ This repository is contains the code used in my course "Understanding HTML and C
         Features built into browser, rather than manually created using JavaScript.
         Native features will always be faster, and more future-proof. Just be sure they're ready and supported.
         Try first make something by HTML and CSS rather than using JavaScript.
+
+# Section 28: Modern Real-World Project: Landing Page
+
+-   227. Landing Page
+-   228. Analyzing the Designer's Prototype
+-   229. Page Structure: HTML Authoring
