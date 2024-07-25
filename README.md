@@ -1164,3 +1164,4 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   229. Page Structure: HTML Authoring
 -   230. Navigation: HTML Authoring
 -   231. Hero: HTML Authoring
+-   232. Features: HTML Authoring
