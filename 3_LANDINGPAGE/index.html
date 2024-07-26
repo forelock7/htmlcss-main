@@ -13,8 +13,15 @@
     <body>
         <header>
             <nav>
-                <p>TonyPro</p>
-                <ul>
+                <p class="logo">TonyPro</p>
+                <a
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Menu button"
+                    aria-expended="false"
+                    >☰</a
+                >
+                <ul class="nav-links" id="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#about">About</a></li>
@@ -86,5 +93,19 @@
         <footer>
             <p>&copy; 2024 TonyPro. All rights reserved.</p>
         </footer>
+        <script>
+            document
+                .getElementById("menu-toggle")
+                .addEventListener("click", function () {
+                    document
+                        .getElementById("nav-links")
+                        .classList.toggle("active");
+                    document.getElementById("menu-toggle").ariaExpanded =
+                        document.getElementById("menu-toggle").ariaExpanded ==
+                        "true"
+                            ? "false"
+                            : "true";
+                });
+        </script>
     </body>
 </html>
