@@ -1171,3 +1171,40 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   236. Layout: CSS Authoring
 -   237. Navigation: CSS Authoring
 -   238. Hero: CSS Authoring
+-   239.    Features: CSS Authoring: -- uses container to make items adaptive to the screen
+            .features {
+            padding: 3rem 1rem;
+            background-color: var(--light-bg);
+            text-align: center;
+            width: 100%;
+            container-type: inline-size;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            flex-basis: 100%; ----- make separate row of header in section
+            }
+            svg {
+            fill: var(--primary-color);
+            }
+            .feature {
+            @container (width >=600) {
+            flex: 1;
+            max-width: 300px;
+
+                            svg {
+                                margin-bottom: 1rem;
+                                width: 48px;
+                                height: 48px;
+                            }
+                        }
+                        margin-bottom: 1.5rem;
+                        h3 {
+                            font-size: 1.5rem;
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
