@@ -1211,3 +1211,12 @@ This repository is contains the code used in my course "Understanding HTML and C
 
 -   240. About Us: CSS Authoring
 -   241. Contact Us: CSS Authoring
+-   242. Footer: CSS Authoring
+         footer {
+         padding: 1rem;
+         margin-top: auto; ---- to avoid increasing footer height if the re is no enaugh content below
+         background: var(--dark-bg);
+         color: var(--light-text);
+         text-align: center;
+         width: 100%;
+         }
