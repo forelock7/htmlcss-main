@@ -1170,3 +1170,4 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   235. Footer: HTML Authoring
 -   236. Layout: CSS Authoring
 -   237. Navigation: CSS Authoring
+-   238. Hero: CSS Authoring
