@@ -1228,3 +1228,4 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   246. Navigation: HTML Authoring
 -   247. Metrics: HTML Authoring
 -   248. Table: HTML Authoring
+-   249. Analytics: HTML Authoring
