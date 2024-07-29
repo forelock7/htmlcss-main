@@ -1220,3 +1220,8 @@ This repository is contains the code used in my course "Understanding HTML and C
          text-align: center;
          width: 100%;
          }
+
+# Section 29: Modern Real World Project: Dashboard
+
+-   244. Analyzing the Designer's Prototype
+-   245. Page Structure: HTML Authoring
