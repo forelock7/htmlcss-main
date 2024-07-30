@@ -1230,3 +1230,58 @@ This repository is contains the code used in my course "Understanding HTML and C
 -   248. Table: HTML Authoring
 -   249. Analytics: HTML Authoring
 -   250. Footer: HTML Authoring
+-   251. Layout: CSS Authoring
+-   252. Navigation: CSS Authoring
+-   253. Metrics: CSS Authoring:
+
+    -   Put labels and numbers in reverse order:
+        <section id="overview">
+        <h2>Overview</h2>
+        <dl class="metrics">
+        <div class="metric">
+        <dt class="metric-label">Custom</dt>
+        <dd class="metric-number">156</dd>
+        </div>
+        <div class="metric">
+        <dt class="metric-label"># Sold</dt>
+        <dd class="metric-number">380</dd>
+        </div>
+        <div class="metric">
+        <dt class="metric-label">Avg. Cost</dt>
+        <dd class="metric-number">$15</dd>
+        </div>
+        </dl>
+        </section>
+        ......
+        @layer components {
+        .metrics {
+        display: flex;
+        gap: 1rem;
+
+                      .metric {
+                          flex: 1;
+                          display: flex;     ----!!!!
+                          flex-wrap: wrap-reverse;  ----!!!!
+                          background-color: var(--color-bg-alternate);
+                          padding: 1rem;
+                          border-radius: 5px;
+                          text-align: center;
+
+                          & > * {
+                              flex-basis: 100%;    ----!!!! (width)
+                          }
+                          ......
+                      }
+                  }
+              }
+
+-   254. Table: CSS Authoring
+    -   border-collapse: collapse; - if two boxes have own borders, just use one of them
+-   255. Analytics: CSS Authoring
+         Avoid image grow up and horizontal scroll
+         #analytics {
+         img {
+         max-width: 100%;
+         }
+         }
+-   256. Footer: CSS Authoring

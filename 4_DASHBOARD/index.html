@@ -3,12 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
         <title>Modern Dashboard</title>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <header>
             <h1>Dashboard</h1>
-            <nav>
+            <nav class="header-nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#reports">Reports</a></li>
@@ -18,18 +23,18 @@
         <main>
             <section id="overview">
                 <h2>Overview</h2>
-                <dl>
-                    <div>
-                        <dt>Custom</dt>
-                        <dd>156</dd>
+                <dl class="metrics">
+                    <div class="metric">
+                        <dt class="metric-label">Custom</dt>
+                        <dd class="metric-number">156</dd>
                     </div>
-                    <div>
-                        <dt># Sold</dt>
-                        <dd>380</dd>
+                    <div class="metric">
+                        <dt class="metric-label"># Sold</dt>
+                        <dd class="metric-number">380</dd>
                     </div>
-                    <div>
-                        <dt>Avg. Cost</dt>
-                        <dd>$15</dd>
+                    <div class="metric">
+                        <dt class="metric-label">Avg. Cost</dt>
+                        <dd class="metric-number">$15</dd>
                     </div>
                 </dl>
             </section>
